@@ -34,3 +34,32 @@ I am open to cooperation, I will be happy to consider all offers.
     * [JavaScript. Architecture of Front-end Applications](https://assets.htmlacademy.ru/certificates/intensive/181/804273.pdf)
     * [JavaScript. Professional Development of Web Interfaces](https://assets.htmlacademy.ru/certificates/intensive/179/804273.pdf)
 * **CS50**
+
+## Code example
+
+Johnny is a farmer and he annually holds a beet farmers convention "Drop the beet".
+
+Every year he takes photos of farmers handshaking. Johnny knows that no two farmers handshake more than once. He also knows that some of the possible handshake combinations may not happen.
+
+However, Johnny would like to know the minimal amount of people that participated this year just by counting all the handshakes.
+
+Help Johnny by writing a function, that takes the amount of handshakes and returns the minimal amount of people needed to perform these handshakes (a pair of farmers handshake only once).
+
+```javascript
+function getParticipants(handshakes){
+    let count = 0;
+    let number = 1;
+    while (count < handshakes) {
+        count = count + number;
+        number++;
+    }
+    return number;
+};
+```
+
+## Languages
+
+* English
+* Ukrainian
+* Russian
+* Polish
