@@ -16,3 +16,21 @@
 I became interested in programming not so long ago. I have been studying actively for about a year. 
 I like to solve problems, find solutions, learn and try something new.
 I am open to cooperation, I will be happy to consider all offers.
+
+## Skils
+
+* HTML/CSS
+* JavaScript
+* Git
+* Webpack
+* Databases
+
+## Education
+
+* **Terra Nova European School of Social Integration** - IT specialist
+    * **EE.09** - [Programming, creating and administering websites and databases](https://drive.google.com/file/d/1BkOj8Q2HgatZVflVxG8exs3U_c03i3f1/view)
+    * **EE.08** - [Installation and operation of computer systems, peripherals and networks](https://drive.google.com/file/d/1j5wmI4WUSRR18XVwAW_orPfRXGO3Z3cO/view)
+* **HTML Academy**:
+    * [JavaScript. Architecture of Front-end Applications](https://assets.htmlacademy.ru/certificates/intensive/181/804273.pdf)
+    * [JavaScript. Professional Development of Web Interfaces](https://assets.htmlacademy.ru/certificates/intensive/179/804273.pdf)
+* **CS50**
