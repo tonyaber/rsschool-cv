@@ -1,1 +1,0 @@
-https://github.com/tonyaber/rsschool-cv.git
