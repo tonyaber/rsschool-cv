@@ -1,0 +1,234 @@
+body {
+    background-color: #151727;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 800px;
+    height: 1845px;
+    margin: 100px auto;
+    background: url(img/banner.jpg) top center / 100% 400px no-repeat;
+    background-color: #f7f7f7;        
+    box-shadow: -50px 50px 75px #000000;
+    border-radius: 5px;
+}
+
+.left_container {
+    width: 280px;    
+}
+
+.right_container {
+    width: 500px;  
+    padding-right: 20px;
+}
+
+.avatar { 
+    height: 310px;
+}
+
+.avatar img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 90px;
+    border: 2px solid #ffffff;
+    border-radius: 100%;
+}
+
+.main_information, .contacts {
+    color: #ffffff;
+}
+
+.main_information {
+    text-align: right;
+}
+
+.main_information h1 {  
+    margin-top: 40px;  
+    font-size: 40px;
+    font-weight: bold;    
+}
+
+.main_information .job_position {
+    font-size: 24px;
+    font-weight: bold;      
+}
+
+.main_information .city {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.contacts {
+    margin-top: 100px
+}
+
+.contacts ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.contacts ul li {  
+    position: relative;  
+    margin: 5px;
+    width: 235px;
+    height: 28px;  
+    border-bottom: 3px solid #ffffff;    
+}
+
+.contacts a {
+    margin-left: 40px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #ffffff;
+    line-height: 30px;
+}
+
+.contacts i {
+    position: absolute;
+    left: 0px;     
+}
+
+.left_container_main {
+    margin: 20px;
+    padding: 10px;
+    background-color: #e5e2e2;
+    border-radius: 5px;
+}
+
+.skills_icons, 
+.languages_icons, 
+.about_me_icons, 
+.education_icons, 
+.code_example_icons {
+    position: relative;     
+    height: 35px;     
+    border-bottom: 3px solid #000000;     
+}
+
+.skills_icons h2, 
+.languages_icons h2, 
+.about_me_icons h2, 
+.education_icons h2, 
+.code_example_icons h2 {
+    margin-left: 55px;
+    font-size: 30px;
+    line-height: 30px;    
+}
+
+.skills_icons i,
+.languages_icons i, 
+.about_me_icons i, 
+.education_icons i, 
+.code_example_icons i {
+    position: absolute;
+    left: 0px; 
+    top: -5px;
+    padding: 5px;
+    color: #ffffff;
+    background-color: #000000;    
+}
+
+.languages_icons i {
+    padding: 5px 10px;
+}
+
+.skills ul, 
+.languages ul {
+    list-style-type: square;
+}
+
+.skills ul li, 
+.languages ul li {
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+.right_container_main {
+    margin-top: 20px;
+}
+
+.about_me, 
+.code_example, 
+.education {
+    padding: 10px;
+}
+
+.education {
+    background-color: #e5e2e2;
+    border-radius: 5px;
+}
+
+.education ul {
+    list-style-type: square;
+    font-size: 18px;
+}
+
+.education > ul > li {
+    font-weight: 900;
+}
+
+.education > ul > li > ul > li > a,
+.education > ul > li > ul > li > spapn {
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #06066B;
+}
+
+.education > ul > li > ul > li > span {
+    color: #000000;
+}
+
+.code_example p,
+.about_me p {
+    margin: 10px;
+    text-align: justify;
+    text-indent: 1.5em;
+}
+.code_example .code { 
+    margin: 10px;   
+    background-color: #e5e2e2;   
+    border: 1px dashed #000000;
+    border-radius: 5px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 150px;
+    padding: 25px;
+    align-items: center;
+    color: white;
+    background-color: #1c1433;
+}
+
+.footer_github a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer_github p {
+    text-align: center;
+    font-weight: 900;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
