@@ -1,1 +1,1 @@
-https://github.com/tonyaber/rsschool-cv.git
+https://tonyaber.github.io/rsschool-cv/
