@@ -5,24 +5,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles_highlight/default.min.css">
     <title>CV</title>
 </head>
 
 <body>
     <div class="container">
-        <div class="left_container">
-            <section class="avatar">
-                <h2 class="visually-hidden">Photo</h2>
-                <img src="img/photo.jpg" width="260" height="260" alt="avatar">
-            </section>
-            <div class="left_container_main">
+        <header>
+            <nav class="menu">
+                <div class="header_burger">
+                    <div class="header_burger_span">
+                       <span></span> 
+                       <span></span>
+                       <span></span>
+                    </div>                    
+                </div>
+                <ul class="header_list">
+                    <li>
+                        <a href="#about_me_h2">About me</a>
+                    </li>
+                    <li>
+                        <a href="#contacts_h2">Contacts</a>
+                    </li>
+                    <li>
+                        <a href="#skills_h2">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#languages_h2">Languages</a>
+                    </li>
+                    <li>
+                        <a href="#education_h2">Education</a>
+                    </li>
+                    <li>
+                        <a href="#projects_h2">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#code_example_h2">Code example</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="left_container">
+                <section class="avatar">
+                    <h2 class="visually-hidden">Photo</h2>
+                    <img class="avatar_img" src="img/photo.jpg" width="300" height="300" alt="avatar">
+                </section>
+                <section class="main_information">
+                    <h1>Berchuk Antonina</h1>
+                    <p class="job_position">Frontend Developer</p>
+                    <p class="city">Wrocław, Poland</p>
+                </section>
+                <section class="contacts">
+                    <h2 class="visually-hidden" id="contacts_h2">Contacts</h2>
+                    <ul class="contacts_list">
+                        <li>
+                            <p class="visually-hidden">Phone</p>
+                            <a href="tel:+48-505-232-400">
+                                <i class="fas fa-phone-square-alt fa-2x"></i>+48-505-232-400
+                            </a>
+                        </li>
+                        <li>
+                            <p class="visually-hidden">Mail</p>
+                            <a href="mailto:tonyaberch@gmail.com">
+                                <i class="fas fa-envelope-square fa-2x"></i>tonyaberch@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <p class="visually-hidden">LinkedIn</p>
+                            <a href="https://www.linkedin.com/in/antonina-berchuk-81680b209/">
+                                <i class="fab fa-linkedin fa-2x"></i>Antonina Berchuk
+                            </a>
+                        </li>
+                        <li>
+                            <p class="visually-hidden">Github</p>
+                            <a href="https://github.com/tonyaber">
+                                <i class="fab fa-github-square fa-2x"></i>tonyaber
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+
                 <section class="skills">
                     <div class="skills_icons">
                         <i class="fas fa-cogs fa-2x"></i>
-                        <h2>Skills</h2>
+                        <h2 id="skills_h2">Skills</h2>
                     </div>
-                    <ul>
+                    <ul class="skills_list">
                         <li>HTML/CSS</li>
                         <li>JavaScript</li>
                         <li>Git</li>
@@ -33,129 +105,164 @@
                 <section class="languages">
                     <div class="languages_icons">
                         <i class="fas fa-globe-americas fa-2x"></i>
-                        <h2>Languages</h2>
+                        <h2 id="languages_h2">Languages</h2>
                     </div>
-                    <ul>
-                        <li>English</li>
-                        <li>Polish</li>
-                        <li>Ukrainian</li>
-                        <li>Russian</li>
+                    <ul class="languages_list">
+                        <li>English - A2</li>
+                        <li>Polish -B2</li>
+                        <li>Ukrainian - Native</li>
+                        <li>Russian - Native</li>
                     </ul>
                 </section>
+
             </div>
-        </div>
-        <div class="right_container">
-            <section class="main_information">
-                <h1>Berchuk Antonina</h1>
-                <p class="job_position">Frontend Developer</p>
-                <p class="city">Wrocław, Poland</p>
-            </section>
-            <section class="contacts">
-                <h2 class="visually-hidden">Contacts</h2>
-                <ul>
-                    <li>
-                        <p class="visually-hidden">Phone</p>
-                        <a href="tel:+48-505-232-400">
-                            <i class="fas fa-phone-square-alt fa-2x"></i>+48-505-232-400
-                        </a>
-                    </li>
-                    <li>
-                        <p class="visually-hidden">Mail</p>
-                        <a href="mailto:tonyaberch@gmail.com">
-                            <i class="fas fa-envelope-square fa-2x"></i>tonyaberch@gmail.com
-                        </a>
-                    </li>
-                    <li>
-                        <p class="visually-hidden">LinkedIn</p>
-                        <a href="https://www.linkedin.com/in/antonina-berchuk-81680b209/">
-                            <i class="fab fa-linkedin fa-2x"></i>Antonina Berchuk
-                        </a>
-                    </li>
-                    <li>
-                        <p class="visually-hidden">Github</p>
-                        <a href="https://github.com/tonyaber">
-                            <i class="fab fa-github-square fa-2x"></i>tonyaber
-                        </a>
-                    </li>
-                </ul>
-            </section>
-            <div class="right_container_main">
-                <section class="about_me">
-                    <div class="about_me_icons">
-                        <i class="far fa-address-card fa-2x"></i>
-                        <h2>About me</h2>
-                    </div>
-                    <p>I became interested in programming not so long ago. I have been studying actively for about a
-                        year.
-                    </p>
-                    <p>I like to solve problems, find solutions, learn and try something new.</p>
-                    <p>I am open to cooperation, I will be happy to consider all offers.</p>
-                </section>
-                <section class="education">
-                    <div class="education_icons">
-                        <i class="fas fa-graduation-cap fa-2x"></i>
-                        <h2>Education</h2>
-                    </div>
-                    <ul>
-                        <li>Terra Nova European School of Social Integration - IT specialist
-                            <ul>
-                                <li>
-                                    <span>EE.09 -</span>
-                                    <a href="https://drive.google.com/file/d/1BkOj8Q2HgatZVflVxG8exs3U_c03i3f1/view">Programming,
-                                        creating and administering websites and databases</a>
-                                </li>
-                                <li>
-                                    <span>EE.08 -</span>
-                                    <a href="https://drive.google.com/file/d/1j5wmI4WUSRR18XVwAW_orPfRXGO3Z3cO/view">Installation
-                                        and operation of computer systems, peripherals and networks</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>HTML Academy
-                            <ul>
-                                <li>
-                                    <a href="https://assets.htmlacademy.ru/certificates/intensive/181/804273.pdf">JavaScript.
-                                        Architecture of Front-end Applications</a>
-                                </li>
-                                <li>
-                                    <a href="https://assets.htmlacademy.ru/certificates/intensive/179/804273.pdf">JavaScript.
-                                        Professional Development of Web Interfaces</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>CS50</li>
-                    </ul>
-                </section>
-                <section class="code_example">
-                    <div class="code_example_icons">
-                        <i class="fas fa-laptop-code fa-2x"></i>
-                        <h2>Code example</h2>
-                    </div>
-                    <p>Johnny is a farmer and he annually holds a beet farmers convention "Drop the beet".</p>
-                    <p>Every year he takes photos of farmers handshaking. Johnny knows that no two farmers handshake
-                        more knows that some of the possible handshake combinations may not happen.</p>
-                    <p>However, Johnny would like to know the minimal amount of people that participated this year just
-                        by counting all the handshakes.</p>
-                    <p>Help Johnny by writing a function, that takes the amount of handshakes and returns the minimal
-                        amount of people needed to perform these handshakes (a pair of farmers handshake only once).</p>
-                    <div class="code">
-                        <pre>
-        <code>
-        function getParticipants(handshakes){
-            let count = 0;
-            let number = 1;
-                while (count &lt; handshakes) {
-                    count=count + number;
-                    number++;
-                }
-            return number;
-        };
-        </code>
-                        </pre>
-                    </div>
-                </section>
+            <div class="right_container">
+                <div class="right_container_main">
+                    <section class="about_me">
+                        <div class="about_me_icons">
+                            <i class="far fa-address-card fa-2x"></i>
+                            <h2 id="about_me_h2">About me</h2>
+                        </div>
+                        <p>I became interested in programming not so long ago. I have been studying actively for about a
+                            year.
+                        </p>
+                        <p>I like to solve problems, find solutions, learn and try something new.</p>
+                        <p>I am open to cooperation, I will be happy to consider all offers.</p>
+                    </section>
+                    <section class="education">
+                        <div class="education_icons">
+                            <i class="fas fa-graduation-cap fa-2x"></i>
+                            <h2 id="education_h2">Education</h2>
+                        </div>
+                        <ul class="education_list">
+                            <li>Terra Nova European School of Social Integration - IT specialist
+                                <ul>
+                                    <li>
+                                        <span>EE.09 -</span>
+                                        <a
+                                            href="https://drive.google.com/file/d/1BkOj8Q2HgatZVflVxG8exs3U_c03i3f1/view">Programming,
+                                            creating and administering websites and databases</a>
+                                    </li>
+                                    <li>
+                                        <span>EE.08 -</span>
+                                        <a
+                                            href="https://drive.google.com/file/d/1j5wmI4WUSRR18XVwAW_orPfRXGO3Z3cO/view">Installation
+                                            and operation of computer systems, peripherals and networks</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>HTML Academy
+                                <ul>
+                                    <li>
+                                        <a href="https://assets.htmlacademy.ru/certificates/intensive/181/804273.pdf">JavaScript.
+                                            Architecture of Front-end Applications</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://assets.htmlacademy.ru/certificates/intensive/179/804273.pdf">JavaScript.
+                                            Professional Development of Web Interfaces</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>CS50</li>
+                        </ul>
+                    </section>
+                    <section class="projects">
+                        <div class="projects_icons">
+                            <i class="fas fa-code fa-2x"></i>
+                            <h2 id="projects_h2">Projects</h2>
+                        </div>
+                        <ul class="projects_list">
+                            <li>
+                                <h3>Keksobooking</h3>
+                                <div class="projects_list_li">
+                                    <div class="projects_list_li_photo">
+                                        <a href="https://tonyaber.github.io/projects/keksobooking/">
+                                            <img src="img/keksobooking.JPG" width="250" height="250" alt="example site keksobooking">
+                                        </a>
+                                    </div>
+                                    <div class="projects_list_li_description">
+                                        <p>Educational project from HTML-academy.</p>
+                                        <p>The site was created to find rental housing.
+                                            The map is created using the library <b>Leaflet</b>.
+                                            You can view ads, use search filters. 
+                                            Available apartments are marked on the map.</p>
+                                            <a href="https://github.com/tonyaber/804273-keksobooking-22">Code</a>
+                                    </div>
+                                </div>
+                                <p>Used:</p>
+                                <ul class="projects_list_skills">
+                                    <li>JavaScript</li>
+                                    <li>Webpack</li>
+                                    <li>Leaflet (map)</li>
+                                    <li>Fetch API (Method get)</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Big Trip</h3>
+                                <div class="projects_list_li">
+                                    <div class="projects_list_li_photo">
+                                        <a href="https://tonyaber.github.io/projects/big-trip/">
+                                            <img src="img/big-trip.JPG" width="250" height="250" alt="example site big trip">
+                                        </a>
+                                    </div>
+                                    <div class="projects_list_li_description">
+                                        <p>Educational project from HTML-academy.</p>
+                                        <p>The travel planning site created with pattern <b>MVP</b>(Model–View–Presenter). 
+                                            You can add your trips, edit, delete,
+                                            view statistics. All data is synchronized with the server.</p>
+                                        <a href="https://github.com/tonyaber/804273-big-trip-14">Code</a>
+                                    </div>
+                                </div>                                
+                                <p>Used:</p>
+                                <ul class="projects_list_skills">
+                                    <li>JavaScript</li>
+                                    <li>Webpack</li>
+                                    <li>Pattern MVP</li>
+                                    <li>Pattern Observer</li>
+                                    <li>Pattern Adapter</li>
+                                    <li>Fetch API (Method get and post)</li>
+                                    <li>Chart.js (statistics)</li>
+                                    <li>Flatpickr (calendar)</li>
+                                    <li>Dayjs</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </section>
+                    <section class="code_example">
+                        <div class="code_example_icons">
+                            <i class="fas fa-laptop-code fa-2x"></i>
+                            <h2 id="code_example_h2">Code example</h2>
+                        </div>
+                        <p>Johnny is a farmer and he annually holds a beet farmers convention "Drop the beet".</p>
+                        <p>Every year he takes photos of farmers handshaking. Johnny knows that no two farmers handshake
+                            more knows that some of the possible handshake combinations may not happen.</p>
+                        <p>However, Johnny would like to know the minimal amount of people that participated this year
+                            just
+                            by counting all the handshakes.</p>
+                        <p>Help Johnny by writing a function, that takes the amount of handshakes and returns the
+                            minimal
+                            amount of people needed to perform these handshakes (a pair of farmers handshake only once).
+                        </p>
+                        <div class="code">
+                            <pre>
+                                <code class="javascript">
+    function getParticipants(handshakes){
+        let count = 0;
+        let number = 1;
+            while (count &lt; handshakes) {
+                count=count + number;
+                number++;
+            }
+        return number;
+    };
+                                </code>
+                            </pre>
+                        </div>
+                    </section>
+                </div>
             </div>
-        </div>
+        </main>
         <footer>
             <div class="footer_github">
                 <a href="https://github.com/tonyaber">
@@ -170,7 +277,10 @@
             </div>
         </footer>
     </div>
-    <script src="https://kit.fontawesome.com/0cc2a83fd8.js" crossorigin="anonymous"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/burger_menu.js"></script>
+    <script src="highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad()</script>
 </body>
 
 </html>
