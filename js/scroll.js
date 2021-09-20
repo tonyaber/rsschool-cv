@@ -20,3 +20,5 @@ document.querySelectorAll('.header_list a[href*="#"').forEach(anchor => {
         }, animationTime);
     })
 });
+
+console.log('Task score: 150');

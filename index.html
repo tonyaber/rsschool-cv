@@ -100,6 +100,7 @@
                         <li>Git</li>
                         <li>Webpack</li>
                         <li>Databases</li>
+                        <li>SQL</li>
                     </ul>
                 </section>
                 <section class="languages">
@@ -176,8 +177,10 @@
                                 <h3>Keksobooking</h3>
                                 <div class="projects_list_li">
                                     <div class="projects_list_li_photo">
-                                        <a href="https://tonyaber.github.io/projects/keksobooking/">
-                                            <img src="img/keksobooking.JPG" width="250" height="250" alt="example site keksobooking">
+                                        <a href="https://tonyaber.github.io/projects/keksobooking/" target="_blank">
+                                            <figure class="projects_list_figure">
+                                                <img src="img/keksobooking.JPG" width="250" height="250" alt="example site keksobooking">   
+                                            </figure>                                            
                                         </a>
                                     </div>
                                     <div class="projects_list_li_description">
@@ -201,8 +204,11 @@
                                 <h3>Big Trip</h3>
                                 <div class="projects_list_li">
                                     <div class="projects_list_li_photo">
-                                        <a href="https://tonyaber.github.io/projects/big-trip/">
-                                            <img src="img/big-trip.JPG" width="250" height="250" alt="example site big trip">
+                                        <a href="https://tonyaber.github.io/projects/big-trip/" target="_blank">
+                                            <figure>
+                                               <img src="img/big-trip.JPG" width="250" height="250" alt="example site big trip"> 
+                                            </figure>
+                                            
                                         </a>
                                     </div>
                                     <div class="projects_list_li_description">
@@ -234,28 +240,28 @@
                             <i class="fas fa-laptop-code fa-2x"></i>
                             <h2 id="code_example_h2">Code example</h2>
                         </div>
-                        <p>Johnny is a farmer and he annually holds a beet farmers convention "Drop the beet".</p>
-                        <p>Every year he takes photos of farmers handshaking. Johnny knows that no two farmers handshake
-                            more knows that some of the possible handshake combinations may not happen.</p>
-                        <p>However, Johnny would like to know the minimal amount of people that participated this year
-                            just
-                            by counting all the handshakes.</p>
-                        <p>Help Johnny by writing a function, that takes the amount of handshakes and returns the
-                            minimal
-                            amount of people needed to perform these handshakes (a pair of farmers handshake only once).
-                        </p>
+                        <article>
+                            <h3>Handshake problem</h3>
+                            Johnny is a farmer and he annually holds a beet farmers convention "Drop the beet".
+                            Every year he takes photos of farmers handshaking. Johnny knows that no two farmers handshake
+                            more knows that some of the possible handshake combinations may not happen.
+                            However, Johnny would like to know the minimal amount of people that participated this year
+                            just by counting all the handshakes.
+                            Help Johnny by writing a function, that takes the amount of handshakes and returns the
+                            minimal amount of people needed to perform these handshakes (a pair of farmers handshake only once).
+                        </article>
                         <div class="code">
                             <pre>
                                 <code class="javascript">
-    function getParticipants(handshakes){
-        let count = 0;
-        let number = 1;
-            while (count &lt; handshakes) {
-                count=count + number;
-                number++;
-            }
-        return number;
-    };
+function getParticipants(hand){
+    let count = 0;
+    let number = 1;
+        while (count &lt; hand) {
+            count=count + number;
+            number++;
+        }
+    return number;
+};
                                 </code>
                             </pre>
                         </div>
@@ -280,7 +286,7 @@
     <script src="js/scroll.js"></script>
     <script src="js/burger_menu.js"></script>
     <script src="highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad()</script>
+    <script>hljs.highlightAll()</script>
 </body>
 
 </html>
