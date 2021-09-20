@@ -370,7 +370,7 @@ section {
     color: #000000;
 }
 
-.code_example p,
+.code_example article,
 .about_me p,
 .projects p {
     margin: 10px;
@@ -380,7 +380,7 @@ section {
 }
 
 .projects p:first-of-type {
-    margin: 0;
+    margin-top: 0;
 }
 
 footer {
